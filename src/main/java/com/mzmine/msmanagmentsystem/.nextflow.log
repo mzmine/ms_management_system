@@ -1,0 +1,14 @@
+Jul-06 18:13:20.373 [main] DEBUG nextflow.cli.Launcher - $> nextflow run chebi_import.nf
+Jul-06 18:13:20.574 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.2
+Jul-06 18:13:20.625 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/shamly/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.3
+Jul-06 18:13:20.676 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-06 18:13:20.684 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-06 18:13:20.695 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jul-06 18:13:20.762 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-06 18:13:20.795 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/shamly/.nextflow/scm
+Jul-06 18:13:20.829 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Cannot find script file: chebi_import.nf
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:462)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:314)
+	at nextflow.cli.Launcher.run(Launcher.groovy:494)
+	at nextflow.cli.Launcher.main(Launcher.groovy:653)
