@@ -7,7 +7,8 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
-
+@Getter
+@Setter
 @Entity
 @Table(name = "COMPOUND_STRUCTURES", schema = "chembl")
 public class ChEMBL_CompoundStructure {
