@@ -1,0 +1,52 @@
+Jul-06 18:23:18.998 [main] DEBUG nextflow.cli.Launcher - $> nextflow run chebi_import.nf
+Jul-06 18:23:19.241 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.2
+Jul-06 18:23:19.298 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/shamly/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.3
+Jul-06 18:23:19.340 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-06 18:23:19.348 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-06 18:23:19.359 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jul-06 18:23:19.413 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-06 18:23:19.680 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-06 18:23:19.762 [main] INFO  nextflow.cli.CmdRun - Launching `chebi_import.nf` [jovial_meitner] DSL2 - revision: dd7206f238
+Jul-06 18:23:19.766 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-06 18:23:19.768 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-06 18:23:19.817 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/shamly/.nextflow/secrets/store.json
+Jul-06 18:23:19.869 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1ee29c84] - activable => nextflow.secret.LocalSecretsProvider@1ee29c84
+Jul-06 18:23:20.175 [main] DEBUG nextflow.Session - Session UUID: 16a12353-355e-4732-be29-cc5ce48c071a
+Jul-06 18:23:20.177 [main] DEBUG nextflow.Session - Run name: jovial_meitner
+Jul-06 18:23:20.185 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jul-06 18:23:20.213 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-06 18:23:20.301 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.2 build 5870
+  Created: 08-06-2023 08:29 UTC (13:59 IDT)
+  System: Linux 5.15.90.1-microsoft-standard-WSL2
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 19.0.2+7-Ubuntu-0ubuntu322.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 6670@Shamly [127.0.1.1]
+  CPUs: 16 - Mem: 7.4 GB (4.9 GB) - Swap: 2 GB (2 GB)
+Jul-06 18:23:20.417 [main] DEBUG nextflow.Session - Work-dir: /mnt/d/ms_management_system/src/main/java/com/mzmine/msmanagmentsystem/nextflow/work [v9fs]
+Jul-06 18:23:20.420 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/d/ms_management_system/src/main/java/com/mzmine/msmanagmentsystem/nextflow/bin
+Jul-06 18:23:20.459 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-06 18:23:20.480 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-06 18:23:20.610 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-06 18:23:20.633 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Jul-06 18:23:20.961 [main] DEBUG nextflow.Session - Session start
+Jul-06 18:23:22.827 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-06 18:23:22.915 [main] DEBUG nextflow.Session - Session aborted -- Cause: No signature of method: Script_e3299d5b.params() is applicable for argument types: (Script_e3299d5b$_runScript_closure1) values: [Script_e3299d5b$_runScript_closure1@3f6bf8aa]
+Possible solutions: stream(), equals(java.lang.Object), print(java.lang.Object), print(java.lang.Object), print(java.io.PrintWriter), print(java.lang.Object)
+Jul-06 18:23:22.945 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingMethodException: No signature of method: Script_e3299d5b.params() is applicable for argument types: (Script_e3299d5b$_runScript_closure1) values: [Script_e3299d5b$_runScript_closure1@3f6bf8aa]
+Possible solutions: stream(), equals(java.lang.Object), print(java.lang.Object), print(java.lang.Object), print(java.io.PrintWriter), print(java.lang.Object)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:70)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:80)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at Script_e3299d5b.runScript(Script_e3299d5b:1)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:145)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:192)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:229)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:224)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:130)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:368)
+	at nextflow.cli.Launcher.run(Launcher.groovy:494)
+	at nextflow.cli.Launcher.main(Launcher.groovy:653)
